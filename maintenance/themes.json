@@ -1,0 +1,63 @@
+{
+    "themes": {
+        "beedev": {
+            "logo": "https://images.beedev-hosting.com/logos/beedev-services.png",
+
+            "backgroundColor": "#F7F6F0",
+            "cardColor": "#FFFFFF",
+
+            "primaryColor": "#F3DB18",
+            "secondaryColor": "#000000",
+
+            "accentColor": "#426e54",
+
+            "textColor": "#000000",
+            "mutedTextColor": "#555555",
+
+            "buttonBackgroundColor": "#F3DB18",
+            "buttonTextColor": "#000000",
+
+            "footerText": "Maintenance managed by BeeDev Services."
+        },
+
+        "noveleshelf": {
+            "logo": "https://images.beedev-hosting.com/logos/noveleshelf.png",
+
+            "backgroundColor": "#F7F6F0",
+            "cardColor": "#FFFFFF",
+
+            "primaryColor": "#F3DB18",
+            "secondaryColor": "#000000",
+
+            "accentColor": "#426e54",
+
+            "textColor": "#000000",
+            "mutedTextColor": "#555555",
+
+            "buttonBackgroundColor": "#F3DB18",
+            "buttonTextColor": "#000000",
+
+            "footerText": "Maintenance managed by BeeDev Services."
+        },
+
+        "plain": {
+            "logo": null,
+
+            "backgroundColor": "#F7F6F0",
+            "cardColor": "#FFFFFF",
+
+            "primaryColor": "#F3DB18",
+            "secondaryColor": "#000000",
+
+            "accentColor": "#426e54",
+
+            "textColor": "#000000",
+            "mutedTextColor": "#555555",
+
+            "buttonBackgroundColor": "#F3DB18",
+            "buttonTextColor": "#000000",
+
+            "footerText": "Maintenance managed by BeeDev Services."
+        }
+    }
+}

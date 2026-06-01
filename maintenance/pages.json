@@ -1,0 +1,117 @@
+{
+  "pages": {
+    "emergency-default": {
+      "type": "emergency",
+      "status": "emergency",
+      "is_active": true,
+      "siteName": "Website",
+      "siteUrl": null,
+      "headline": "We're working on it.",
+      "message": "Something needs our attention behind the scenes. Our hive is actively investigating the issue and working to restore service as quickly as possible.",
+      "estimatedReturn": null,
+      "showEstimatedReturn": false,
+      "contactEmail": "support@beedev-services.com",
+      "showContact": true,
+      "returnButtonText": "Return to Website",
+      "themeSlug": "beedev",
+      "showLogo": true,
+      "lastUpdated": "2026-05-31T14:30:00Z",
+      "updatedBy": "Melissa"
+    },
+
+    "beedev-services": {
+      "type": "beedev",
+      "status": "maintenance",
+      "is_active": false,
+      "siteName": "BeeDev Services",
+      "siteUrl": "https://beedev-services.com",
+      "headline": "Our hive is getting a tune-up.",
+      "message": "We're making updates behind the scenes to improve your experience. Thank you for your patience while we work.",
+      "estimatedReturn": null,
+      "showEstimatedReturn": false,
+      "contactEmail": "support@beedev-services.com",
+      "showContact": true,
+      "returnButtonText": "Return to BeeDev Services",
+      "themeSlug": "beedev",
+      "showLogo": true,
+      "lastUpdated": "2026-05-31T14:30:00Z",
+      "updatedBy": "Melissa"
+    },
+
+    "noveleshelf": {
+      "type": "client",
+      "status": "scheduled",
+      "is_active": true,
+      "siteName": "NoveleShelf",
+      "siteUrl": "https://noveleshelf.com",
+      "headline": "The shelves are getting a quick refresh.",
+      "message": "We're making scheduled updates behind the scenes to improve the reading and author experience.",
+      "estimatedReturn": "Today at 4:00 PM EST",
+      "showEstimatedReturn": true,
+      "contactEmail": "support@noveleshelf.com",
+      "showContact": true,
+      "returnButtonText": "Return to NoveleShelf",
+      "themeSlug": "noveleshelf",
+      "showLogo": true,
+      "lastUpdated": "2026-05-31T14:30:00Z",
+      "updatedBy": "Melissa"
+    },
+
+    "noveleshelf-emergency": {
+      "type": "emergency",
+      "status": "emergency",
+      "is_active": false,
+      "siteName": "NoveleShelf",
+      "siteUrl": "https://noveleshelf.com",
+      "headline": "NoveleShelf is temporarily unavailable.",
+      "message": "We're aware of an issue affecting the platform and are actively working on a resolution.",
+      "estimatedReturn": null,
+      "showEstimatedReturn": false,
+      "contactEmail": "support@noveleshelf.com",
+      "showContact": true,
+      "returnButtonText": "Return to NoveleShelf",
+      "themeSlug": "noveleshelf",
+      "showLogo": true,
+      "lastUpdated": "2026-05-31T14:30:00Z",
+      "updatedBy": "Melissa"
+    },
+
+    "custom-default": {
+      "type": "custom",
+      "status": "maintenance",
+      "is_active": true,
+      "siteName": "This Website",
+      "siteUrl": null,
+      "headline": "We'll be right back.",
+      "message": "Updates are currently in progress. Thank you for your patience while improvements are being made.",
+      "estimatedReturn": null,
+      "showEstimatedReturn": false,
+      "contactEmail": null,
+      "showContact": false,
+      "returnButtonText": "Return to Website",
+      "themeSlug": "plain",
+      "showLogo": false,
+      "lastUpdated": "2026-05-31T14:30:00Z",
+      "updatedBy": "Melissa"
+    },
+
+    "inactive-default": {
+      "type": "inactive",
+      "status": "active",
+      "is_active": true,
+      "siteName": "This Website",
+      "siteUrl": null,
+      "headline": "This site appears to be active.",
+      "message": "The maintenance notice is currently turned off. You can head back to the website using the button below.",
+      "estimatedReturn": null,
+      "showEstimatedReturn": false,
+      "contactEmail": "support@beedev-services.com",
+      "showContact": false,
+      "returnButtonText": "Return to Website",
+      "themeSlug": "beedev",
+      "showLogo": true,
+      "lastUpdated": "2026-05-31T14:30:00Z",
+      "updatedBy": "Melissa"
+    }
+  }
+}
