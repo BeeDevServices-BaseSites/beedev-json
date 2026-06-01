@@ -109,24 +109,24 @@
                 {
                   "label": "Site Data",
                   "type": "site",
-                  "url": "/clients/veteran/smts/smts.json",
-                  "alt_url": null,
+                  "url": "/clients/veteran/smts/services.json",
+                  "alt_url": "https://json.seniorsmobiletaxservices.com/services.json",
                   "description": "Primary site data for SMTS while hosted through BeeDev.",
-                  "is_active": true,
+                  "is_active": false,
                   "created_at": "2026-05-31",
                   "last_updated": "2026-05-31",
-                  "swapped_at": null
+                  "swapped_at": "2026-06-01"
                 },
                 {
                   "label": "Testimonials",
                   "type": "testimonials",
-                  "url": "/clients/veteran/smts/testimonials.json",
-                  "alt_url": null,
+                  "url": "/clients/veteran/smts/tidbts.json",
+                  "alt_url": "https://json.seniorsmobiletaxservices.com/tidbits.json",
                   "description": "Testimonials used on the SMTS website.",
-                  "is_active": true,
+                  "is_active": false,
                   "created_at": "2026-05-31",
                   "last_updated": "2026-05-31",
-                  "swapped_at": null
+                  "swapped_at": "2026-06-01"
                 }
               ]
             },

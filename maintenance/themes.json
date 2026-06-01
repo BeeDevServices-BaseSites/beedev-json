@@ -1,62 +1,45 @@
 {
     "themes": {
         "beedev": {
-            "logo": "https://images.beedev-hosting.com/logos/beedev-services.png",
-
+            "logo": "https://images.thehive-services.com/beeDevServices/Logo_2.png",
+            "favicon": "https://images.thehive-services.com/beeDevServices/Logo_2.png",
             "backgroundColor": "#F7F6F0",
             "cardColor": "#FFFFFF",
-
             "primaryColor": "#F3DB18",
             "secondaryColor": "#000000",
-
             "accentColor": "#426e54",
-
             "textColor": "#000000",
             "mutedTextColor": "#555555",
-
             "buttonBackgroundColor": "#F3DB18",
             "buttonTextColor": "#000000",
-
             "footerText": "Maintenance managed by BeeDev Services."
         },
-
         "noveleshelf": {
-            "logo": "https://images.beedev-hosting.com/logos/noveleshelf.png",
-
-            "backgroundColor": "#F7F6F0",
-            "cardColor": "#FFFFFF",
-
-            "primaryColor": "#F3DB18",
-            "secondaryColor": "#000000",
-
-            "accentColor": "#426e54",
-
-            "textColor": "#000000",
-            "mutedTextColor": "#555555",
-
-            "buttonBackgroundColor": "#F3DB18",
-            "buttonTextColor": "#000000",
-
+            "logo": "https://images.beedev-hosting.com/nes/logo.png",
+            "favicon": "https://images.beedev-hosting.com/nes/shelf.png",
+            "backgroundColor": "#090414",
+            "cardColor": "#1A1426",
+            "primaryColor": "#7474cc",
+            "secondaryColor": "#ffffff",
+            "accentColor": "#68b9b9",
+            "textColor": "#ffffff",
+            "mutedTextColor": "#cfc7e6",
+            "buttonBackgroundColor": "#DD7a7a",
+            "buttonTextColor": "#ffffff",
             "footerText": "Maintenance managed by BeeDev Services."
         },
-
         "plain": {
             "logo": null,
-
+            "favicon": null,
             "backgroundColor": "#F7F6F0",
             "cardColor": "#FFFFFF",
-
             "primaryColor": "#F3DB18",
             "secondaryColor": "#000000",
-
             "accentColor": "#426e54",
-
             "textColor": "#000000",
             "mutedTextColor": "#555555",
-
             "buttonBackgroundColor": "#F3DB18",
             "buttonTextColor": "#000000",
-
             "footerText": "Maintenance managed by BeeDev Services."
         }
     }
