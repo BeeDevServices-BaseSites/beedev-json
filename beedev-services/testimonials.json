@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bds-001",
+    "is_active": true,
+    "quote": "BeeDev Services delivered a truly professional website—one we’re proud to share and that continues to receive great feedback. Melissa and her team were thoughtful, capable, and reliable throughout the process.",
+    "author_name": "BeeDev Client",
+    "author_title": "Business Owner",
+    "company": "",
+    "location": "",
+    "project": "",
+    "date": "2025-01-29",
+    "since": "2024"
+  },
+  {
+    "id": "bds-002",
+    "is_active": false,
+    "quote": "Second testimonial goes here when ready.",
+    "author_name": "",
+    "author_title": "",
+    "company": "",
+    "location": "",
+    "project": "",
+    "date": "",
+    "since": ""
+  }
+]

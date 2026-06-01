@@ -1,0 +1,17 @@
+DirectoryIndex index.json
+Options -Indexes
+
+<IfModule mod_headers.c>
+  SetEnvIf Origin "^https?://(([a-z0-9-]+\.)?beedev-services\.com|localhost:5173|127\.0\.0\.1:5173)$" ORIGIN_OK=$0
+
+  Header always set Access-Control-Allow-Origin "%{ORIGIN_OK}e" env=ORIGIN_OK
+  Header always set Access-Control-Allow-Methods "GET, OPTIONS" env=ORIGIN_OK
+  Header always set Access-Control-Allow-Headers "Content-Type" env=ORIGIN_OK
+  Header always set Vary "Origin"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_METHOD} OPTIONS
+  RewriteRule ^(.*)$ $1 [R=204,L]
+</IfModule>

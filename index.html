@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>BeeDev JSON Hub</title>
+  <meta
+    name="description"
+    content="BeeDev Services JSON Hub for centralized public JSON files."
+  />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="/">
+        <span class="brand-mark">⬢</span>
+        <span>
+          <strong>BeeDev</strong>
+          <small>JSON Hub</small>
+        </span>
+      </a>
+
+      <a class="nav-link" href="/index.json" target="_blank" rel="noopener">
+        View index.json
+      </a>
+    </nav>
+
+    <section class="hero">
+      <p class="eyebrow">Centralized Data Registry</p>
+
+      <h1>BeeDev JSON Hub</h1>
+
+      <p class="hero-text">
+        A clean reference page for BeeDev-managed public JSON files used across
+        websites, previews, maintenance pages, client projects, and internal tools.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/index.json" target="_blank" rel="noopener">
+          Open JSON Registry
+        </a>
+
+        <button class="btn btn-secondary" id="refreshBtn" type="button">
+          Refresh Data
+        </button>
+      </div>
+    </section>
+  </header>
+
+  <main class="main-content">
+    <section class="status-card" aria-label="Registry status">
+      <span class="pulse" aria-hidden="true"></span>
+
+      <div>
+        <h2>Registry Status</h2>
+        <p id="registryStatus">Loading index.json...</p>
+      </div>
+    </section>
+
+    <section class="toolbar" aria-label="Registry search and filters">
+      <div>
+        <label class="search-label" for="searchInput">
+          Search active sections, clients, and JSON files
+        </label>
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search by name, slug, type, URL, alt URL, or date..."
+        />
+
+        <p class="toolbar-note">
+          Inactive sections, groups, and clients are hidden. Inactive files remain
+          visible so you can still track old or swapped JSON sources.
+        </p>
+      </div>
+
+      <div class="filter-actions" aria-label="File filters">
+        <button class="filter-btn active" type="button" data-filter="all">
+          All Files
+        </button>
+
+        <button class="filter-btn" type="button" data-filter="active">
+          Active Files
+        </button>
+
+        <button class="filter-btn" type="button" data-filter="inactive">
+          Inactive Files
+        </button>
+      </div>
+    </section>
+
+    <section id="hubGrid" class="hub-grid" aria-live="polite"></section>
+
+    <section class="empty-state hidden" id="emptyState">
+      <h2>No matching registry items found</h2>
+      <p>
+        Try another search term, clear the filter, or check whether the parent
+        section has <code>is_active: true</code>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Built for the BeeDev hive. Public JSON only — no secrets, keys, credentials,
+      or private client notes.
+    </p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

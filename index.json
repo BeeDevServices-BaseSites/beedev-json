@@ -1,0 +1,184 @@
+{
+  "name": "BeeDev JSON Hub",
+  "description": "Centralized registry for BeeDev-managed public JSON files.",
+  "last_updated": "2026-05-31",
+  "sections": [
+    {
+      "name": "BeeDev Services",
+      "slug": "beedev-services",
+      "is_active": true,
+      "created_at": "2026-05-31",
+      "last_updated": "2026-05-31",
+      "files": [
+        {
+          "label": "Projects",
+          "type": "projects",
+          "url": "/beedev-services/Projects.json",
+          "alt_url": null,
+          "description": "Portfolio project data for BeeDev Services.",
+          "is_active": true,
+          "created_at": "2026-05-31",
+          "last_updated": "2026-05-31",
+          "swapped_at": null
+        },
+        {
+          "label": "Testimonials",
+          "type": "testimonials",
+          "url": "/beedev-services/testimonials.json",
+          "alt_url": null,
+          "description": "Testimonials for BeeDev Services.",
+          "is_active": true,
+          "created_at": "2026-05-31",
+          "last_updated": "2026-05-31",
+          "swapped_at": null
+        }
+      ]
+    },
+    {
+      "name": "Maintenance",
+      "slug": "maintenance",
+      "is_active": true,
+      "created_at": "2026-05-31",
+      "last_updated": "2026-05-31",
+      "files": [
+        {
+          "label": "Maintenance Pages",
+          "type": "maintenance",
+          "url": "/maintenance/maintenance.json",
+          "alt_url": null,
+          "description": "Maintenance page messages by site slug.",
+          "is_active": false,
+          "created_at": "2026-05-31",
+          "last_updated": "2026-05-31",
+          "swapped_at": null
+        }
+      ]
+    },
+    {
+      "name": "Portal",
+      "slug": "portal",
+      "is_active": false,
+      "created_at": "2026-05-31",
+      "last_updated": "2026-05-31",
+      "files": [
+        {
+          "label": "Resources",
+          "type": "resources",
+          "url": "/portal/resources.json",
+          "alt_url": null,
+          "description": "Portal-related public resource data.",
+          "is_active": false,
+          "created_at": "2026-05-31",
+          "last_updated": "2026-05-31",
+          "swapped_at": null
+        }
+      ]
+    },
+    {
+      "name": "Clients",
+      "slug": "clients",
+      "is_active": true,
+      "created_at": "2026-05-31",
+      "last_updated": "2026-05-31",
+      "groups": [
+        {
+          "name": "Veteran Clients",
+          "slug": "veteran",
+          "is_active": true,
+          "created_at": "2026-05-31",
+          "last_updated": "2026-05-31",
+          "clients": [
+            {
+              "name": "Seniors Mobile Tax Services",
+              "slug": "smts",
+              "is_active": true,
+              "created_at": "2026-05-31",
+              "last_updated": "2026-05-31",
+              "files": [
+                {
+                  "label": "Site Data",
+                  "type": "site",
+                  "url": "/clients/veteran/smts/smts.json",
+                  "alt_url": null,
+                  "description": "Primary site data for SMTS while hosted through BeeDev.",
+                  "is_active": true,
+                  "created_at": "2026-05-31",
+                  "last_updated": "2026-05-31",
+                  "swapped_at": null
+                },
+                {
+                  "label": "Testimonials",
+                  "type": "testimonials",
+                  "url": "/clients/veteran/smts/testimonials.json",
+                  "alt_url": null,
+                  "description": "Testimonials used on the SMTS website.",
+                  "is_active": true,
+                  "created_at": "2026-05-31",
+                  "last_updated": "2026-05-31",
+                  "swapped_at": null
+                }
+              ]
+            },
+            {
+              "name": "Elevate 360 Media Co",
+              "slug": "e360",
+              "is_active": false,
+              "created_at": "2026-05-31",
+              "last_updated": "2026-05-31",
+              "files": [
+                {
+                  "label": "Site Data",
+                  "type": "site",
+                  "url": "/clients/veteran/e360/e360.json",
+                  "alt_url": null,
+                  "description": "Primary site data for Elevate 360 Media Co.",
+                  "is_active": true,
+                  "created_at": "2026-05-31",
+                  "last_updated": "2026-05-31",
+                  "swapped_at": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Non-Veteran Clients",
+          "slug": "non-veteran",
+          "is_active": true,
+          "created_at": "2026-05-31",
+          "last_updated": "2026-05-31",
+          "clients": [
+            {
+              "name": "AGRA",
+              "slug": "agra",
+              "is_active": false,
+              "created_at": "2026-05-31",
+              "last_updated": "2026-05-31",
+              "files": [
+                {
+                  "label": "Site Data",
+                  "type": "site",
+                  "url": "/clients/non-veteran/agra/agra.json",
+                  "alt_url": null,
+                  "description": "Primary site data for AGRA.",
+                  "is_active": true,
+                  "created_at": "2026-05-31",
+                  "last_updated": "2026-05-31",
+                  "swapped_at": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TechByte Learning",
+      "slug": "techbyte-learning",
+      "is_active": false,
+      "created_at": "2026-05-31",
+      "last_updated": "2026-05-31",
+      "files": []
+    }
+  ]
+}

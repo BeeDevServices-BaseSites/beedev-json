@@ -1,0 +1,147 @@
+
+[
+        { 
+                "id": "1", 
+                "src": "https://images.thehive-services.com/beeDevServices/TB.png", 
+                "title": "TechByte Learning", 
+                "description": "Web Development Education", 
+                "link": "https://techbyte-learning.com",
+                "isActive": true
+        },
+        { 
+                "id": "2", 
+                "src": "https://images.thehive-services.com/beeDevServices/BDS.png", 
+                "title": "BeeDev Services", 
+                "description": "Web Development Agency ", 
+                "link": "https://beedev-services.com/",
+                "isActive": true
+        },
+        { 
+                "id": "3", 
+                "src": "https://images.thehive-services.com/beeDevServices/SF.png", 
+                "title": "Seoul Food", 
+                "description": "Korean Restaurant", 
+                "link": "https://valor-11.beedev-services.com/",
+                "isActive": true
+        },
+        { 
+                "id": "4", 
+                "src": "https://images.thehive-services.com/beeDevServices/smts.png", 
+                "title": "Seniors Mobile Tax Services", 
+                "description": "Expert in-home tax services", 
+                "link": "https://seniorsmobiletaxservices.com",
+                "isActive": true
+        },
+        { 
+                "id": "5", 
+                "src": "https://images.thehive-services.com/beeDevServices/BL.png", 
+                "title": "Barnard Legal PLLC", 
+                "description": "Immigration Attorney and Immigrant Services", 
+                "link": "https://www.barnardlegal.com/",
+                "isActive": true
+        },
+        { 
+                "id": "6", 
+                "src": "https://images.thehive-services.com/beeDevServices/NeS_thumb.png", 
+                "title": "Novel eShelf", 
+                "description": "Author-First Publishing Platform", 
+                "link": "https://noveleshelf.com",
+                "isActive": true
+        },
+        { 
+                "id": "7", 
+                "src": "https://images.thehive-services.com/beeDevServices/ps_thumb.png", 
+                "title": "Pymsphere", 
+                "description": "AI-Powered Skincare Intelligence", 
+                "link": "https://pymsphere.com/",
+                "isActive": false
+        },
+        { 
+                "id": "8", 
+                "src": "https://images.thehive-services.com/beeDevServices/comingSoon.png", 
+                "title": "Project 8", 
+                "description": "Project Description", 
+                "link": "#",
+                "isActive": false
+        },
+        { 
+                "id": "9", 
+                "src": "https://images.thehive-services.com/beeDevServices/comingSoon.png", 
+                "title": "Project 9", 
+                "description": "Project Description", 
+                "link": "#",
+                "isActive": false
+        },
+        { 
+                "id": "10",
+                "src": "https://images.thehive-services.com/beeDevServices/comingSoon.png", 
+                "title": "Project 10", 
+                "description": "Project Description", 
+                "link": "#",
+                "isActive": false
+        },
+        { 
+                "id": "11",
+                "src": "https://images.thehive-services.com/beeDevServices/comingSoon.png", 
+                "title": "Project 11", 
+                "description": "Project Description", 
+                "link": "#",
+                "isActive": false
+        },
+        { 
+                "id": "12",
+                "src": "https://images.thehive-services.com/beeDevServices/comingSoon.png", 
+                "title": "Project 12", 
+                "description": "Project Description", 
+                "link": "#",
+                "isActive": false
+        },
+        { 
+                "id": "13",
+                "src": "https://images.thehive-services.com/beeDevServices/comingSoon.png", 
+                "title": "Project 13", 
+                "description": "Project Description", 
+                "link": "#",
+                "isActive": false
+        },
+        { 
+                "id": "14",
+                "src": "https://images.thehive-services.com/beeDevServices/comingSoon.png", 
+                "title": "Project 14", 
+                "description": "Project Description", 
+                "link": "#",
+                "isActive": false
+        },
+        { 
+                "id": "15",
+                "src": "https://images.thehive-services.com/beeDevServices/comingSoon.png", 
+                "title": "Project 15", 
+                "description": "Project Description", 
+                "link": "#",
+                "isActive": false
+        },
+        { 
+                "id": "16",
+                "src": "https://images.thehive-services.com/beeDevServices/comingSoon.png", 
+                "title": "Project 16", 
+                "description": "Project Description", 
+                "link": "#",
+                "isActive": false
+        },
+        { 
+                "id": "17",
+                "src": "https://images.thehive-services.com/beeDevServices/comingSoon.png", 
+                "title": "Project 17", 
+                "description": "Project Description", 
+                "link": "#",
+                "isActive": false
+        },
+        { 
+                "id": "18",
+                "src": "https://images.thehive-services.com/beeDevServices/comingSoon.png", 
+                "title": "Project 18", 
+                "description": "Project Description", 
+                "link": "#",
+                "isActive": false
+        }
+]
