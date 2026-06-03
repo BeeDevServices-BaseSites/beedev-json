@@ -1,0 +1,154 @@
+{
+    "groups": [
+        {
+            "id": "infrastructure",
+            "label": "Hive Infrastructure"
+        },
+        {
+            "id": "client-sites",
+            "label": "Client Websites"
+        },
+        {
+            "id": "development",
+            "label": "Development & Preview"
+        }
+    ],
+    "serviceGroups": [
+        {
+            "id": "bds",
+            "label": "BeeDev Services",
+            "group": "infrastructure",
+            "is_active": true
+        },
+        {
+            "id": "nes",
+            "label": "Novel eShelf",
+            "group": "client-sites",
+            "is_active": true
+        },
+        {
+            "id": "smts",
+            "label": "Seniors Mobile Tax Services",
+            "group": "client-sites",
+            "is_active": true
+        },
+        {
+            "id": "tbl",
+            "label": "TechByte Learning",
+            "group": "infrastructure",
+            "is_active": false
+        }
+    ],
+    "monitors": [
+        {
+            "id": "bds-front",
+            "serviceGroup": "bds",
+            "uptimeRobotId": 796210487,
+            "displayName": "BeeDev Services",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "tbl-front",
+            "serviceGroup": "tbl",
+            "uptimeRobotId": 796373551,
+            "displayName": "TechByte Learning",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": false
+        },
+        {
+            "id": "smts-front",
+            "serviceGroup": "smts",
+            "uptimeRobotId": 800546370,
+            "displayName": "Seniors Mobile Tax Services",
+            "group": "client-sites",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "smts-node",
+            "serviceGroup": "smts",
+            "uptimeRobotId": 800546370,
+            "displayName": "SMTS-nodemailer",
+            "group": "client-sites",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "nes-front",
+            "serviceGroup": "nes",
+            "uptimeRobotId": 802960772,
+            "displayName": "Novel eShelf",
+            "group": "client-sites",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "nes-api",
+            "serviceGroup": "nes",
+            "uptimeRobotId": 802960778,
+            "displayName": "NeS-API",
+            "group": "client-sites",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "nes-node",
+            "serviceGroup": "nes",
+            "uptimeRobotId": 802960778,
+            "displayName": "NeS-Nodemailer",
+            "group": "client-sites",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": false
+        },
+        {
+            "id": "nes-app",
+            "serviceGroup": "nes",
+            "uptimeRobotId": 802960778,
+            "displayName": "NeS-App",
+            "group": "client-sites",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": false
+        },
+        {
+            "id": "bds-img-craft",
+            "serviceGroup": "bds",
+            "uptimeRobotId": 796210497,
+            "displayName": "Images API - Craftnherbs",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": false
+        },
+        {
+            "id": "bds-img-hiveservices",
+            "serviceGroup": "bds",
+            "uptimeRobotId": 796210497,
+            "displayName": "Images API - thehiveservices",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": false
+        }
+    ]
+}
