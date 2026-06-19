@@ -1,12 +1,67 @@
 {
+  "_meta": {
+    "description": "BeeDev Services — maintenance pages and notice registry",
+    "version": "1.1.0",
+    "updated": "2026-06-08",
+    "file_url": "https://json.beedev-services.com/maintenance/pages.json",
+    "usage": {
+      "maintenance_site": "Reads 'pages' entries to render branded maintenance pages. Key by page slug (e.g. 'noveleshelf', 'noveleshelf-emergency').",
+      "notice_banner": "React component in each client Vite app reads its own entry by client_id key. Only reads its own entry — 'beedev-services' being active has no effect on 'noveleshelf'."
+    },
+    "field_reference": {
+      "is_active": "true = banner shows and/or maintenance page is live. false = everything off, entry is ignored.",
+      "status": "Controls banner color and icon. Values: 'scheduled' (yellow/warning), 'maintenance' (blue/info), 'emergency' (red/danger).",
+      "show_from": "ISO 8601 UTC datetime. Banner will not appear before this time. Also used to calculate dismiss tier (see dismiss_tiers). Set to null to show immediately with no tier logic (12hr dismiss hold used as default).",
+      "expires_at": "ISO 8601 UTC datetime. Banner auto-hides after this time. Set to null to disable auto-hide — you must manually flip is_active to false.",
+      "dismissible": "true = user can dismiss the banner. false = banner is permanent (use for emergencies). Note: even when true, dismiss is automatically locked when under 6 hours from show_from.",
+      "estimatedReturn": "Plain text string shown in the banner and on the maintenance page. e.g. 'Friday at 4:00 PM EST'. Only shown if showEstimatedReturn is true.",
+      "lastUpdated": "ISO 8601 datetime. For your reference only — not read by any app.",
+      "updatedBy": "Name string. For your reference only — not read by any app.",
+      "pre_message": "Shown in the banner BEFORE show_from is reached. Use this for advance notice: e.g. 'Scheduled maintenance on Friday Jun 12 at 4:00 AM EST. The site will be briefly unavailable.' Falls back to 'message' if not set or if show_from is null/passed.",
+      "maint_at": "ISO 8601 UTC datetime of the actual maintenance window. Used to: (1) switch banner from pre_message to message, (2) calculate dismiss tiers. show_from controls when the banner first appears; maint_at is when things actually go down. Set to null for emergencies where there is no scheduled time."
+    },
+    "dismiss_tiers": {
+      "explanation": "When show_from is set, the dismiss button behavior tightens automatically as maintenance approaches. When show_from is null, the 12hr default is always used.",
+      "more_than_24hrs_away": "User can dismiss — banner stays hidden for 12 hours, then reappears.",
+      "6_to_24hrs_away": "User can dismiss — banner stays hidden for 2 hours, then reappears.",
+      "under_6hrs_away": "Dismiss button is hidden entirely. Banner cannot be cleared."
+    },
+    "utc_offset_reference": {
+      "explanation": "show_from and expires_at must be in UTC. Convert from US timezones:",
+      "ET_summer_EDT": "Add 4 hours. e.g. Friday 4:00 AM ET = Friday 08:00 UTC = '2026-06-12T08:00:00Z'",
+      "ET_winter_EST": "Add 5 hours. e.g. Friday 4:00 AM ET = Friday 09:00 UTC = '2026-01-09T09:00:00Z'",
+      "CT_summer_CDT": "Add 5 hours.",
+      "CT_winter_CST": "Add 6 hours.",
+      "tip": "Quick check: https://www.timeanddate.com/worldclock/converter.html"
+    },
+    "workflow": {
+      "planned_maintenance": [
+        "1. Set is_active to true",
+        "2. Set status to 'scheduled'",
+        "3. Set show_from to when banner should start showing (UTC)",
+        "4. Set expires_at to when banner should auto-hide after maintenance ends (UTC)",
+        "5. Set estimatedReturn to plain text e.g. 'Friday at 4:00 PM EST' and showEstimatedReturn to true",
+        "6. When site goes down, update .htaccess to redirect to maintenance site",
+        "7. When site comes back up, remove .htaccess redirect and set is_active to false"
+      ],
+      "emergency": [
+        "1. Set is_active to true on the emergency entry (e.g. 'noveleshelf-emergency')",
+        "2. Set dismissible to false",
+        "3. Leave show_from and expires_at as null — manage manually",
+        "4. Update .htaccess redirect if site is actually down",
+        "5. When resolved, set is_active to false and remove .htaccess redirect"
+      ]
+    }
+  },
   "pages": {
     "emergency-default": {
       "type": "emergency",
       "status": "emergency",
-      "is_active": true,
+      "is_active": false,
       "siteName": "Website",
       "siteUrl": null,
       "headline": "We're working on it.",
+      "pre_message": null,
       "message": "Something needs our attention behind the scenes. Our hive is actively investigating the issue and working to restore service as quickly as possible.",
       "estimatedReturn": null,
       "showEstimatedReturn": false,
@@ -16,9 +71,12 @@
       "themeSlug": "beedev",
       "showLogo": true,
       "lastUpdated": "2026-05-31T14:30:00Z",
-      "updatedBy": "Melissa"
+      "updatedBy": "Melissa",
+      "show_from": null,
+      "expires_at": null,
+      "maint_at": null,
+      "dismissible": false
     },
-
     "beedev-services": {
       "type": "beedev",
       "status": "maintenance",
@@ -26,6 +84,7 @@
       "siteName": "BeeDev Services",
       "siteUrl": "https://beedev-services.com",
       "headline": "Our hive is getting a tune-up.",
+      "pre_message": null,
       "message": "We're making updates behind the scenes to improve your experience. Thank you for your patience while we work.",
       "estimatedReturn": null,
       "showEstimatedReturn": false,
@@ -35,18 +94,22 @@
       "themeSlug": "beedev",
       "showLogo": true,
       "lastUpdated": "2026-05-31T14:30:00Z",
-      "updatedBy": "Melissa"
+      "updatedBy": "Melissa",
+      "show_from": null,
+      "expires_at": null,
+      "maint_at": null,
+      "dismissible": true
     },
-
     "noveleshelf": {
       "type": "client",
       "status": "scheduled",
       "is_active": true,
-      "siteName": "NoveleShelf",
+      "siteName": "Novel eShelf",
       "siteUrl": "https://noveleshelf.com",
       "headline": "The shelves are getting a quick refresh.",
+      "pre_message": "The site will be unavailable on Friday Jun 12 at 4:00 AM EST for scheduled updates or maintenance.",
       "message": "We're making scheduled updates behind the scenes to improve the reading and author experience.",
-      "estimatedReturn": "Today at 4:00 PM EST",
+      "estimatedReturn": "Friday at 4:00 PM EST",
       "showEstimatedReturn": true,
       "contactEmail": "support@noveleshelf.com",
       "showContact": true,
@@ -54,16 +117,20 @@
       "themeSlug": "noveleshelf",
       "showLogo": true,
       "lastUpdated": "2026-05-31T14:30:00Z",
-      "updatedBy": "Melissa"
+      "updatedBy": "Melissa",
+      "show_from": "2026-06-07T08:00:00Z",
+      "expires_at": "2026-06-13T00:00:00Z",
+      "maint_at": "2026-06-12T08:00:00Z",
+      "dismissible": true
     },
-
     "noveleshelf-emergency": {
       "type": "emergency",
       "status": "emergency",
       "is_active": false,
-      "siteName": "NoveleShelf",
+      "siteName": "Novel eShelf",
       "siteUrl": "https://noveleshelf.com",
       "headline": "NoveleShelf is temporarily unavailable.",
+      "pre_message": null,
       "message": "We're aware of an issue affecting the platform and are actively working on a resolution.",
       "estimatedReturn": null,
       "showEstimatedReturn": false,
@@ -73,16 +140,20 @@
       "themeSlug": "noveleshelf",
       "showLogo": true,
       "lastUpdated": "2026-05-31T14:30:00Z",
-      "updatedBy": "Melissa"
+      "updatedBy": "Melissa",
+      "show_from": null,
+      "expires_at": null,
+      "maint_at": null,
+      "dismissible": false
     },
-
     "custom-default": {
       "type": "custom",
       "status": "maintenance",
-      "is_active": true,
+      "is_active": false,
       "siteName": "This Website",
       "siteUrl": null,
       "headline": "We'll be right back.",
+      "pre_message": null,
       "message": "Updates are currently in progress. Thank you for your patience while improvements are being made.",
       "estimatedReturn": null,
       "showEstimatedReturn": false,
@@ -92,9 +163,12 @@
       "themeSlug": "plain",
       "showLogo": false,
       "lastUpdated": "2026-05-31T14:30:00Z",
-      "updatedBy": "Melissa"
+      "updatedBy": "Melissa",
+      "show_from": null,
+      "expires_at": null,
+      "maint_at": null,
+      "dismissible": true
     },
-
     "inactive-default": {
       "type": "inactive",
       "status": "active",
@@ -102,6 +176,7 @@
       "siteName": "This Website",
       "siteUrl": null,
       "headline": "This site appears to be active.",
+      "pre_message": null,
       "message": "The maintenance notice is currently turned off. You can head back to the website using the button below.",
       "estimatedReturn": null,
       "showEstimatedReturn": false,
@@ -111,7 +186,11 @@
       "themeSlug": "beedev",
       "showLogo": true,
       "lastUpdated": "2026-05-31T14:30:00Z",
-      "updatedBy": "Melissa"
+      "updatedBy": "Melissa",
+      "show_from": null,
+      "expires_at": null,
+      "maint_at": null,
+      "dismissible": false
     }
   }
 }

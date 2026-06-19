@@ -1,0 +1,164 @@
+{
+    "clients": [
+        {
+            "smts": [
+                {
+                    "id": 800546370,
+                    "friendlyName": "SMTS",
+                    "url": "https://seniorsmobiletaxservices.com"
+                },
+                {
+                    "id": 803234314,
+                    "friendlyName": "smts-node",
+                    "url": "https://smtsmail.seniorsmobiletaxservices.com/api/captcha"
+                }
+            ]
+        },
+        {
+            "nes": [
+                {
+                    "id": 802960772,
+                    "friendlyName": "nes-front",
+                    "url": "https://noveleshelf.com"
+                },
+                {
+                    "id": 802960778,
+                    "friendlyName": "nes-api",
+                    "url": "https://api.noveleshelf.com"
+                },
+                {
+                    "id": 803220858,
+                    "friendlyName": "nes-app",
+                    "url": "https://app.noveleshelf.com/"
+                },
+                {
+                    "id": 803234275,
+                    "friendlyName": "nes-node",
+                    "url": "https://nesmail.noveleshelf.com/api/captcha"
+                }
+            ]
+        },
+        {
+            "ps": [
+                {
+                    "id": 803220894,
+                    "friendlyName": "ps-front",
+                    "url": "https://pymsphere.com/"
+                },
+                {
+                    "id": 803220896,
+                    "friendlyName": "ps-images",
+                    "url": "https://images.pymsphere.com/"
+                },
+                {
+                    "id": 803234616,
+                    "friendlyName": "ps-node",
+                    "url": "https://psmail.pymsphere.com/api/captcha"
+                }
+            ]
+        }
+    ],
+    "beedev": [
+        {
+            "id": 796210487,
+            "friendlyName": "beedev",
+            "url": "https://beedev-services.com"
+        },
+        {
+            "id": 796210497,
+            "friendlyName": "imagescraft",
+            "url": "https://images.craftsnherbs.com"
+        },
+        {
+            "id": 803234780,
+            "friendlyName": "imagesHive",
+            "url": "https://images.thehive-services.com/"
+        },
+        {
+            "id": 803234802,
+            "friendlyName": "Status Site",
+            "url": "https://status.httphive.com/"
+        },
+        {
+            "id": 803234795,
+            "friendlyName": "JSON Site",
+            "url": "https://json.beedev-services.com/"
+        },
+        {
+            "id": 803234791,
+            "friendlyName": "Maintenance Site",
+            "url": "https://maintenance.beedev-services.com/custom/default"
+        }
+    ],
+    "preview": [
+        {
+            "id": 803229407,
+            "friendlyName": "Seoul Food",
+            "url": "https://valor-11.beedev-services.com/"
+        },
+        {
+            "id": 803229415,
+            "friendlyName": "e360mc (preview)",
+            "url": "https://valor-22.beedev-services.com/"
+        },
+        {
+            "id": 803229419,
+            "friendlyName": "ps (preview)",
+            "url": "https://valor-33.beedev-services.com/"
+        },
+        {
+            "id": 803229422,
+            "friendlyName": "mmws (preview)",
+            "url": "https://valor-44.beedev-services.com/"
+        },
+        {
+            "id": 803229426,
+            "friendlyName": "Preview 55",
+            "url": "https://valor-55.beedev-services.com/"
+        },
+        {
+            "id": 802960768,
+            "friendlyName": "NeS (preview)",
+            "url": "https://valor-66.beedev-services.com/"
+        },
+        {
+            "id": 803234646,
+            "friendlyName": "AGRA (preview)",
+            "url": "https://hive-11.beedev-services.com/"
+        },
+        {
+            "id": 803234289,
+            "friendlyName": "hivemail-11",
+            "url": "https://hivemail-11.thehive-services.com/api/captcha"
+        }
+    ],
+    "techbyte": [
+        {
+            "id": 796373551,
+            "friendlyName": "techbyte-main",
+            "url": "https://techbyte-learning.com"
+        },
+        {
+            "id": 796373558,
+            "friendlyName": "techbyte-learnplatform",
+            "url": "https://learn.techbyte-learning.com"
+        },
+        {
+            "id": 796373567,
+            "friendlyName": "techbyte-mainVERCELDEV",
+            "url": "https://techbyte-learning-p8zel136s-melissalongenberger24.vercel.app/"
+        }
+    ],
+    "misc": [
+        {
+            "id": 796210494,
+            "friendlyName": "codebuzzhelpers",
+            "url": "https://helper.beedev-services.com"
+        },
+        {
+            "id": 803234799,
+            "friendlyName": "Status Codes",
+            "url": "https://httphive.com/"
+        }
+    ]
+}

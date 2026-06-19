@@ -1,7 +1,7 @@
 {
   "name": "BeeDev JSON Hub",
   "description": "Centralized registry for BeeDev-managed public JSON files.",
-  "last_updated": "2026-06-02",
+  "last_updated": "2026-06-18",
   "sections": [
     {
       "name": "BeeDev Services",
@@ -102,7 +102,7 @@
             {
               "name": "Seniors Mobile Tax Services",
               "slug": "smts",
-              "is_active": true,
+              "is_active": false,
               "created_at": "2026-05-31",
               "last_updated": "2026-05-31",
               "files": [
@@ -205,28 +205,6 @@
           "alt_url": null,
           "description": "HTTPHive monitor configuration and display settings.",
           "is_active": true,
-          "created_at": "2026-06-03",
-          "last_updated": "2026-06-03",
-          "swapped_at": null
-        },
-        {
-          "label": "Incidents",
-          "type": "monitoring",
-          "url": "/httphive/incidents.json",
-          "alt_url": null,
-          "description": "HTTPHive incident history.",
-          "is_active": false,
-          "created_at": "2026-06-03",
-          "last_updated": "2026-06-03",
-          "swapped_at": null
-        },
-        {
-          "label": "Maintenance Windows",
-          "type": "monitoring",
-          "url": "/httphive/maintenance.json",
-          "alt_url": null,
-          "description": "Scheduled maintenance windows.",
-          "is_active": false,
           "created_at": "2026-06-03",
           "last_updated": "2026-06-03",
           "swapped_at": null

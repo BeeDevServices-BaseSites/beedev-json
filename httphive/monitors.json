@@ -21,6 +21,12 @@
             "is_active": true
         },
         {
+            "id": "tbl",
+            "label": "TechByte Learning",
+            "group": "infrastructure",
+            "is_active": false
+        },
+        {
             "id": "nes",
             "label": "Novel eShelf",
             "group": "client-sites",
@@ -33,9 +39,63 @@
             "is_active": true
         },
         {
-            "id": "tbl",
-            "label": "TechByte Learning",
-            "group": "infrastructure",
+            "id": "agra",
+            "label": "A.G. Reese",
+            "group": "client-sites",
+            "is_active": false
+        },
+        {
+            "id": "ps",
+            "label": "PymSphere",
+            "group": "client-sites",
+            "is_active": true
+        },
+        {
+            "id": "e360mc",
+            "label": "Elevate 360 Media Co",
+            "group": "client-sites",
+            "is_active": false
+        },
+        {
+            "id": "bl",
+            "label": "Barnard Legal",
+            "group": "client-sites",
+            "is_active": false
+        },
+        {
+            "id": "sf",
+            "label": "Seoul Food",
+            "group": "client-sites",
+            "is_active": false
+        },
+        {
+            "id": "mmws",
+            "label": "Metal Man Welding Services",
+            "group": "client-sites",
+            "is_active": false
+        },
+        {
+            "id": "bds-p",
+            "label": "BeeDev Preview/Develop Sites",
+            "group": "development",
+            "is_active": true
+        },
+        {
+            "id": "",
+            "label": "",
+            "group": "",
+            "is_active": false
+        },
+        {
+            "id": "",
+            "label": "",
+            "group": "",
+            "is_active": false
+        },
+        {
+            "id": "",
+            "label": "",
+            "group": "",
             "is_active": false
         }
     ],
@@ -52,10 +112,76 @@
             "is_active": true
         },
         {
+            "id": "bds-img-craft",
+            "serviceGroup": "bds",
+            "uptimeRobotId": 796210497,
+            "displayName": "Images API - 01",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "bds-img-hive",
+            "serviceGroup": "bds",
+            "uptimeRobotId": 803234780,
+            "displayName": "Images API - 02",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "bds-status",
+            "serviceGroup": "bds",
+            "uptimeRobotId": 803234802,
+            "displayName": "Hive Status Site",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "bds-json",
+            "serviceGroup": "bds",
+            "uptimeRobotId": 803234795,
+            "displayName": "Hive JSON",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "bds-maint",
+            "serviceGroup": "bds",
+            "uptimeRobotId": 803234791,
+            "displayName": "Hive Mainenance",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
             "id": "tbl-front",
             "serviceGroup": "tbl",
             "uptimeRobotId": 796373551,
             "displayName": "TechByte Learning",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": false
+        },
+        {
+            "id": "tbl-learn",
+            "serviceGroup": "tbl",
+            "uptimeRobotId": 796373558,
+            "displayName": "TechByte Learning Platform",
             "group": "infrastructure",
             "public": true,
             "notifyClient": false,
@@ -76,8 +202,8 @@
         {
             "id": "smts-node",
             "serviceGroup": "smts",
-            "uptimeRobotId": 800546370,
-            "displayName": "SMTS-nodemailer",
+            "uptimeRobotId": 803234314,
+            "displayName": "Seniors Mobile Tax Services - Contact",
             "group": "client-sites",
             "public": true,
             "notifyClient": false,
@@ -107,32 +233,120 @@
             "is_active": true
         },
         {
+            "id": "nes-app",
+            "serviceGroup": "bds-p",
+            "uptimeRobotId": 803220858,
+            "displayName": "NeS-App",
+            "group": "development",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
             "id": "nes-node",
             "serviceGroup": "nes",
-            "uptimeRobotId": 802960778,
-            "displayName": "NeS-Nodemailer",
+            "uptimeRobotId": 803234275,
+            "displayName": "NeS-Contact",
             "group": "client-sites",
             "public": true,
             "notifyClient": false,
             "clientEmail": "",
-            "is_active": false
+            "is_active": true
         },
         {
-            "id": "nes-app",
-            "serviceGroup": "nes",
-            "uptimeRobotId": 802960778,
-            "displayName": "NeS-App",
+            "id": "ps-front",
+            "serviceGroup": "ps",
+            "uptimeRobotId": 803220894,
+            "displayName": "PymSphere",
             "group": "client-sites",
             "public": true,
             "notifyClient": false,
             "clientEmail": "",
-            "is_active": false
+            "is_active": true
         },
         {
-            "id": "bds-img-craft",
-            "serviceGroup": "bds",
+            "id": "ps-node",
+            "serviceGroup": "ps",
+            "uptimeRobotId": 803234616,
+            "displayName": "PymSphere - Contact",
+            "group": "client-sites",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "sf-front",
+            "serviceGroup": "bds-p",
+            "uptimeRobotId": 803229407,
+            "displayName": "Seoul Food",
+            "group": "development",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "e360,c-preview",
+            "serviceGroup": "bds-p",
+            "uptimeRobotId": 803229415,
+            "displayName": "Elevate 360 Media Co (Preview)",
+            "group": "development",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "ps-preview",
+            "serviceGroup": "bds-p",
+            "uptimeRobotId": 803229419,
+            "displayName": "PymSphere (Preview)",
+            "group": "development",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "mmws-preview",
+            "serviceGroup": "bds-p",
+            "uptimeRobotId": 803229422,
+            "displayName": "Metal Man Welding Services (Preview)",
+            "group": "development",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "bds-55",
+            "serviceGroup": "bds-p",
+            "uptimeRobotId": 803229426,
+            "displayName": "Preview Coming Soon",
+            "group": "development",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "nes-preview",
+            "serviceGroup": "bds-p",
+            "uptimeRobotId": 802960768,
+            "displayName": "Novel eShelf Preview Site",
+            "group": "development",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": true
+        },
+        {
+            "id": "",
+            "serviceGroup": "",
             "uptimeRobotId": 796210497,
-            "displayName": "Images API - Craftnherbs",
+            "displayName": "",
             "group": "infrastructure",
             "public": true,
             "notifyClient": false,
@@ -140,10 +354,65 @@
             "is_active": false
         },
         {
-            "id": "bds-img-hiveservices",
-            "serviceGroup": "bds",
+            "id": "",
+            "serviceGroup": "",
             "uptimeRobotId": 796210497,
-            "displayName": "Images API - thehiveservices",
+            "displayName": "",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": false
+        },
+        {
+            "id": "",
+            "serviceGroup": "",
+            "uptimeRobotId": 796210497,
+            "displayName": "",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": false
+        },
+        {
+            "id": "",
+            "serviceGroup": "",
+            "uptimeRobotId": 796210497,
+            "displayName": "",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": false
+        },
+        {
+            "id": "",
+            "serviceGroup": "",
+            "uptimeRobotId": 796210487,
+            "displayName": "BeeDev Services",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": false
+        },
+        {
+            "id": "",
+            "serviceGroup": "",
+            "uptimeRobotId": 796210487,
+            "displayName": "BeeDev Services",
+            "group": "infrastructure",
+            "public": true,
+            "notifyClient": false,
+            "clientEmail": "",
+            "is_active": false
+        },
+        {
+            "id": "",
+            "serviceGroup": "",
+            "uptimeRobotId": 796210487,
+            "displayName": "BeeDev Services",
             "group": "infrastructure",
             "public": true,
             "notifyClient": false,
